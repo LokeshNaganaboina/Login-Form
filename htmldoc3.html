@@ -1,0 +1,31 @@
+<html>
+      <head>
+	         <title>With Java Script</title>
+	  </head>
+	  <body>
+	         <p id="para"></p>
+			 <form>
+			        <input type="text"></input>
+					<input type="color"></input>
+					<input type="submit"></input>
+					<input type="file"></input>
+					<input type="radio"></input>
+					<input type="range"></input>
+					<input type="button"></input>
+					<input type="checkbox"></input>
+					<input type="date">
+					<!input type="text"><!/input>
+			 </form>
+			 <script>
+			           var person={fname:"Lokesh",
+					               lname:"Yadav",
+								   age:19,
+								   study:"BE",
+								   details: function(){
+								            return this.fname+" "+this.lname}};
+					   
+					   document.getElementById("para").innerHTML = "The person name is "+person.fname+" "+person["lname"]+".His age is "+person['age']+" and studying B.E"
+					                                              +person.details();
+			 </script>
+	  </body>
+</html>
